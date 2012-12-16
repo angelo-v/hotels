@@ -27,7 +27,6 @@ class HotelController {
     }
 
     def list () {
-        // TODO test
         def hotels = Hotel.list()
         withFormat {
             ttl {

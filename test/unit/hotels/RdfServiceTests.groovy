@@ -23,9 +23,6 @@ class RdfServiceTests {
         assertEquals('Testhotel', hotelResource.'http://purl.org/goodrelations/v1#name')
         assertEquals(123, hotelResource.'http://purl.org/acco/ns#numberOfRooms')
         assertEquals('http://example.com/Berlin', hotelResource.'http://xmlns.com/foaf/0.1/based_near'?.uri)
-
-        // TODO add metadata?
-
     }
 
     void testHotelsToRdf () {

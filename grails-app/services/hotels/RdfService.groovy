@@ -24,6 +24,10 @@ class RdfService {
         }
     }
 
+    /**
+     * @param hotels The hotel instances to describe via RDF
+     * @return RDF data describing the given list of hotels
+     */
     RdfData hotelsToRdf (List<Hotel> hotels) {
         new JenaRdfBuilder ().build {
             hotels.each { Hotel hotel ->
